@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.ANIMATION_LED{
+  animation: led 6s infinite linear
+}
+
+.ANIMATION_LED2{
+  animation: led 8s infinite linear
+}
+
+.ANIMATION_LED3{
+  animation: led 10s infinite linear
+}
+
+@keyframes led {
+  0%{
+    background-color: green;
+    box-shadow: 1px 1px 6px #06ed34;
+  }
+  50%{
+    background-color: rgb(235, 224, 4);
+    box-shadow: 1px 1px 6px #ede106;
+  }
+  100%{
+    background-color: rgb(114, 5, 231);
+    box-shadow: 1px 1px 6px #6606ed;
+  }
+}
