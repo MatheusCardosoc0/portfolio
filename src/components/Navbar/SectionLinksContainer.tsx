@@ -19,7 +19,7 @@ const SectionLinksContainer: React.FC<SectionLinksContainerProps> = ({
         md:p-2
       "
     >
-      <div className="text-2xl text-black group-hover:text-white">
+      <div className="text-2xl text-black group-hover:text-white dark:text-white">
         <b>{data}</b>
       </div>
 
@@ -32,11 +32,13 @@ const SectionLinksContainer: React.FC<SectionLinksContainerProps> = ({
             top-1
             z-[-1]
             hidden
-            h-12
+            h-8
             w-[33%]
             rotate-[-8deg]
             bg-black
             group-hover:block
+            dark:bg-purple-600
+            md:h-12
           `,
             i === 0 && 'dark:ANIMATION_LED right-[0%]',
             i === 1 && 'dark:ANIMATION_LED2 right-[33%]',
