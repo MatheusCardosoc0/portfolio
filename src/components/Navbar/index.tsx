@@ -1,5 +1,3 @@
-import { sectionLinks } from '@/utils/sectionLinks'
-import SectionLinksContainer from './SectionLinksContainer'
 import Menu from './Menu'
 import ThemeButton from './ThemeButton'
 
@@ -17,18 +15,11 @@ const Navbar = () => {
      "
     >
       <div className="px-2 py-4 sm:px-4 lg:px-6 lg:py-6">
-        <div className="flex justify-evenly">
-          {sectionLinks.slice(0, 2).map((item, i) => (
-            <div
-              key={item.title}
-              className={`
-                hidden
-                sm:flex
-              `}
-            >
-              <SectionLinksContainer data={item.title} />
-            </div>
-          ))}
+        <div className="flex items-center justify-evenly">
+          <h2 className="flex gap-1 text-2xl font-black">
+            <span>Matheus Cardoso</span>
+            <span className="hidden lg:flex">Luiz Costa</span>
+          </h2>
 
           <ThemeButton />
 
