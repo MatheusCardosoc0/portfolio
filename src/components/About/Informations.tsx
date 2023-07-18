@@ -28,6 +28,7 @@ const Informations = () => {
         <button
           onClick={() => setIsOpen(true)}
           className="
+            EMPHASIS
             group
             relative
             w-[90%]
@@ -38,9 +39,22 @@ const Informations = () => {
             border-t-4
             border-black
             py-4
+            dark:border-purple-500
+            dark:bg-black
           "
         >
-          <GiMoebiusStar className="mx-auto text-5xl text-yellow-500 drop-shadow-[1px_1px_0px_black] transition-all duration-1000 group-hover:rotate-90" />
+          <GiMoebiusStar
+            className="
+              mx-auto
+              text-5xl 
+              text-yellow-500 
+              drop-shadow-[1px_1px_0px_black] 
+              transition-all 
+              duration-1000 
+              group-hover:rotate-90 
+              dark:text-indigo-500
+            "
+          />
 
           <div
             className="
@@ -52,7 +66,24 @@ const Informations = () => {
               rounded-full
               border-4
               border-black
+              bg-yellow-500
+              dark:border-purple-500
+              dark:bg-purple-500
+            "
+          />
+          <div
+            className="
+              absolute
+              right-2
+              top-1
+              h-[90%]
+              w-[14%]
+              rounded-full
+              border-4
+              border-black
               bg-neutral-200
+              dark:border-zinc-800
+              dark:bg-purple-900
             "
           />
         </button>

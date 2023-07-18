@@ -1,4 +1,4 @@
-interface SectionLinkProps {
+type SectionLinkProps = {
   title: string
 }
 
