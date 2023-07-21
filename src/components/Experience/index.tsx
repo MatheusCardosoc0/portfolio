@@ -1,3 +1,5 @@
+import ExperienceContainer from './ExperienceContainer'
+
 const Experience = () => {
   return (
     <section
@@ -18,8 +20,10 @@ const Experience = () => {
         "
       >
         <h2 className="text-2xl font-bold italic drop-shadow-[0.5px_0.5px_0px_#00ffc3]">
-          Experiência
+          Experiências
         </h2>
+
+        <ExperienceContainer />
       </div>
     </section>
   )

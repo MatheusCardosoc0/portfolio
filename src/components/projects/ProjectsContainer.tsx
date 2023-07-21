@@ -1,10 +1,10 @@
-import { SectionProjectsProps } from '@/utils/sectionProjectjs'
+import { Project } from '@/utils/sectionProjectjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaGithub } from 'react-icons/fa'
 
 interface ProjectsContainerProps {
-  data: SectionProjectsProps
+  data: Project
 }
 
 const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ data }) => {
@@ -25,10 +25,10 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ data }) => {
         duration-1000
         hover:rotate-[-5deg]
         hover:drop-shadow-[-20px_-20px_12px_#00000058]
-        dark:border-green-700
-        dark:border-l-green-900
-        dark:border-t-green-800
-        dark:bg-purple-700
+        dark:border-neutral-700
+        dark:border-l-neutral-900
+        dark:border-t-neutral-800
+        dark:bg-neutral-700
         hover:dark:drop-shadow-[-20px_-20px_12px_#4800ff]
       "
     >
@@ -59,10 +59,10 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ data }) => {
               border-l-neutral-500
               border-r-neutral-600
               border-t-neutral-500
-              dark:border-b-green-900
-              dark:border-l-green-800
-              dark:border-r-green-900
-              dark:border-t-green-800
+              dark:border-b-neutral-900
+              dark:border-l-neutral-800
+              dark:border-r-neutral-900
+              dark:border-t-neutral-800
             "
           />
         </Link>

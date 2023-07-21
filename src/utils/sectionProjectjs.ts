@@ -1,4 +1,4 @@
-export type SectionProjectsProps = {
+export type Project = {
   image: string
   title: string
   description: string
@@ -6,7 +6,7 @@ export type SectionProjectsProps = {
   linkDeploy: string
 }
 
-export const sectionProjects: SectionProjectsProps[] = [
+export const sectionProjects: Project[] = [
   {
     title: 'App-Stock',
     image: '/images/app-stock.png',

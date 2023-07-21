@@ -52,3 +52,34 @@
   75%{box-shadow: 0px 0px 40px yellow;}
   100%{box-shadow: 0px 0px 80px yellow;}
 }
+
+.GLASS{
+  background-color: rgb(255, 255, 255);
+ 
+}
+
+.TOPOINTLEFT {
+  animation: topointleft 1s infinite linear;
+}
+
+@keyframes topointleft{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+
+.TOPOINTRIGHT {
+  animation: topointright 1s infinite linear;
+}
+
+@keyframes topointright{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(10px);
+  }
+}
