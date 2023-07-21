@@ -33,7 +33,17 @@ const Project = () => {
         >
           Projetos
         </h2>
-        <div>
+        <div
+          className="
+            flex
+            flex-col
+            flex-wrap
+            items-center
+            justify-center
+            gap-6
+            sm:flex-row
+          "
+        >
           {sectionProjects.map((item) => (
             <ProjectsContainer key={item.title} data={item} />
           ))}

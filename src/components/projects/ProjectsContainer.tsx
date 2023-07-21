@@ -12,21 +12,29 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ data }) => {
     <div
       className="
         rounded-md
-        border-l-2
-        border-t-2
-        border-l-neutral-300
-        border-t-neutral-200
-        bg-neutral-100
+        border-2
+        border-l-4
+        border-t-4
+        border-neutral-300
+        border-l-neutral-500
+        border-t-neutral-400
+        bg-white
         p-2
-        drop-shadow-[0px_0px_8px_black]
+        drop-shadow-[0px_0px_2px_black]
         transition-all
         duration-1000
-        hover:rotate-[-10deg]
+        hover:rotate-[-5deg]
         hover:drop-shadow-[-20px_-20px_12px_#00000058]
+        dark:border-green-700
+        dark:border-l-green-900
+        dark:border-t-green-800
+        dark:bg-purple-700
+        hover:dark:drop-shadow-[-20px_-20px_12px_#4800ff]
       "
     >
       <div
         className="
+          relative
           mx-auto
           h-[300px]
           w-full
@@ -51,6 +59,10 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ data }) => {
               border-l-neutral-500
               border-r-neutral-600
               border-t-neutral-500
+              dark:border-b-green-900
+              dark:border-l-green-800
+              dark:border-r-green-900
+              dark:border-t-green-800
             "
           />
         </Link>
@@ -62,10 +74,40 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ data }) => {
             className="
               mx-auto
               mt-4
+              rounded-full
+              bg-white
               text-2xl
+              drop-shadow-[0px_0px_1px_black]
+              dark:bg-black
             "
           />
         </Link>
+
+        <div
+          className="
+            absolute
+            bottom-2
+            left-2
+            h-4
+            w-4
+            rounded-full
+            bg-blue-500
+            drop-shadow-[0px_0px_1px_black]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            bottom-2
+            left-12
+            h-4
+            w-4
+            rounded-full
+            bg-yellow-500
+            drop-shadow-[0px_0px_1px_black]
+          "
+        />
       </div>
     </div>
   )

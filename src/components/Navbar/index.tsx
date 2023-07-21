@@ -7,6 +7,7 @@ const Navbar = () => {
       className="
       fixed
       top-0
+      z-50
       w-full
       bg-white
       drop-shadow-[0px_4px_4px_#0000005d]
